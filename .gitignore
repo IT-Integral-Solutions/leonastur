@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.claude
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment — never commit secrets
+.env
+
+# Database files — local dev and production databases stay off git
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+
+# data/ directory contents (only .gitkeep is tracked)
+data/*
+!data/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+.DS_Store
