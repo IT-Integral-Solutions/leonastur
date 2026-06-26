@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Leonas TUR | Agencia de Viajes Premium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+<!-- ═══════════════════════════════════════════════════════════
+     GOOGLE ANALYTICS 4
+     1. Creá tu propiedad en analytics.google.com
+     2. Reemplazá G-XXXXXXXXXX con tu Measurement ID (aparece en
+        Admin > Data Streams > Web > Measurement ID)
+═══════════════════════════════════════════════════════════ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', {
+    page_title: 'Leonas TUR | Agencia de Viajes Premium',
+    send_page_view: true,
+    linker: { domains: ['wa.me'] }
+  });
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="container">
+    <div class="nav-in">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/images/logo.png" alt="Leonas TUR"/>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#paquetes">Paquetes</a></li>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/5493885820032" class="nav-wa" target="_blank" onclick="return openWhatsApp('', 'nav')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Consultar ahora
+      </a>
+      <div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <img src="assets/images/hero/perito-moreno.png" alt="Glaciar Perito Moreno, Patagonia"/>
+  </div>
+  <div class="hero-veil"></div>
+  <div class="hero-veil2"></div>
+
+  <!-- Decorative particles -->
+  <div class="hero-particle" style="top:20%;left:15%;--dur:5s;--delay:0s;"></div>
+  <div class="hero-particle" style="top:40%;left:8%;--dur:7s;--delay:1s;"></div>
+  <div class="hero-particle" style="top:65%;left:20%;--dur:6s;--delay:2s;"></div>
+  <div class="hero-particle" style="top:30%;left:70%;--dur:8s;--delay:0.5s;"></div>
+  <div class="hero-particle" style="top:55%;left:60%;--dur:5.5s;--delay:3s;"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge fade-up">
+        <span class="badge-dot"></span>
+        Agencia premium · Argentina
+      </div>
+      <h1 class="hero-title fade-up d1">
+        Tu próxima expedición,<br><em>diseñada sin margen</em><br>de error.
+      </h1>
+      <p class="hero-slogan fade-up d2">
+        Destinos nacionales e internacionales de élite — con un asesor real, no un algoritmo. Desde la consulta hasta que volvés.
+      </p>
+      <div class="hero-btns fade-up d3">
+        <a href="https://wa.me/5493885820032" class="btn-gold" target="_blank" onclick="return openWhatsApp('Hola! Quiero diseñar mi viaje', 'hero')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Diseñá tu viaje
+        </a>
+        <a href="#destinos" class="btn-ghost">Ver destinos &darr;</a>
+      </div>
+      <div class="hero-stats fade-up d4">
+        <div><div class="stat-n">500+</div><div class="stat-l">Viajeros en 2025</div></div>
+        <div><div class="stat-n">12+</div><div class="stat-l">Destinos activos</div></div>
+        <div><div class="stat-n">4.9</div><div class="stat-l">Calificación Google</div></div>
+        <div><div class="stat-n">8</div><div class="stat-l">Años de trayectoria</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-inner">
+    <span class="ticker-item">Caribe &amp; Cancún <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Patagonia Argentina <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Europa Clásica <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Miami &amp; Orlando <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Mediterráneo <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Turquía <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Salta &amp; NOA <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Luna de miel <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Caribe &amp; Cancún <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Patagonia Argentina <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Europa Clásica <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Miami &amp; Orlando <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Mediterráneo <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Turquía <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Salta &amp; NOA <span class="ticker-sep">✦</span></span>
+    <span class="ticker-item">Luna de miel <span class="ticker-sep">✦</span></span>
+  </div>
+</div>
+
+<!-- PAQUETES -->
+<section id="paquetes">
+  <div class="container">
+    <div class="fade-up">
+      <span class="eyebrow">Nuestros paquetes</span>
+      <h2 class="sec-title">Experiencias que no encontrás<br><em>en ningún buscador</em></h2>
+      <div class="gold-line"></div>
+      <p class="sec-sub">Cada itinerario es diseñado a medida, con socios locales de élite y plena asistencia en destino.</p>
+    </div>
+    <div class="pkg-grid">
+
+      <div class="pkg-card fade-up d1">
+        <div class="pkg-img">
+          <img src="assets/images/paquetes/paquete-caribe.png" alt="Caribe Cancún"/>
+          <div class="pkg-top-line"></div>
+          <div class="pkg-badge badge-hot">Más vendido</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-region">Caribe · México</div>
+          <div class="pkg-name">Caribe &amp; Cancún Premium</div>
+          <div class="pkg-desc">All-inclusive en resort 5 estrellas frente al mar. Vuelos, traslados y asistencia incluidos.</div>
+          <div class="pkg-footer">
+            <span class="pkg-cta-label">Cotizá tu paquete</span>
+            <div class="pkg-link" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card fade-up d2">
+        <div class="pkg-img">
+          <img src="assets/images/paquetes/paquete-miami-orlando.png" alt="Miami Orlando"/>
+          <div class="pkg-top-line"></div>
+          <div class="pkg-badge badge-new">Nuevo</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-region">USA · Florida</div>
+          <div class="pkg-name">Miami + Orlando (Disney)</div>
+          <div class="pkg-desc">10 días combinando la magia de Disney con las playas de Miami Beach. Parques incluidos.</div>
+          <div class="pkg-footer">
+            <span class="pkg-cta-label">Cotizá tu paquete</span>
+            <div class="pkg-link" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card fade-up d3">
+        <div class="pkg-img">
+          <img src="assets/images/paquetes/paquete-europa.png" alt="Europa París"/>
+          <div class="pkg-top-line"></div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-region">Europa · Circuito</div>
+          <div class="pkg-name">Europa en 15 Días</div>
+          <div class="pkg-desc">París, Roma, Barcelona y Ámsterdam. Circuito completo con guía en español.</div>
+          <div class="pkg-footer">
+            <span class="pkg-cta-label">Cotizá tu paquete</span>
+            <div class="pkg-link" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card fade-up">
+        <div class="pkg-img">
+          <img src="assets/images/paquetes/paquete-patagonia.png" alt="Patagonia Calafate"/>
+          <div class="pkg-top-line"></div>
+          <div class="pkg-badge badge-prem">Premium</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-region">Argentina · Patagonia</div>
+          <div class="pkg-name">Patagonia &amp; Glaciares</div>
+          <div class="pkg-desc">Calafate, Chaltén y Bariloche. Glaciar Perito Moreno y trekking en Los Glaciares.</div>
+          <div class="pkg-footer">
+            <span class="pkg-cta-label">Cotizá tu paquete</span>
+            <div class="pkg-link" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card fade-up d2">
+        <div class="pkg-img">
+          <img src="assets/images/paquetes/paquete-mediterraneo.png" alt="Crucero Mediterráneo Santorini"/>
+          <div class="pkg-top-line"></div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-region">Europa · Mediterráneo</div>
+          <div class="pkg-name">Crucero Mediterráneo</div>
+          <div class="pkg-desc">Italia, Grecia y España. 14 noches recorriendo los puertos más icónicos del mundo.</div>
+          <div class="pkg-footer">
+            <span class="pkg-cta-label">Cotizá tu paquete</span>
+            <div class="pkg-link" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card fade-up d3">
+        <div class="pkg-img">
+          <img src="assets/images/paquetes/paquete-luna-de-miel.png" alt="Luna de miel Caribe"/>
+          <div class="pkg-top-line"></div>
+          <div class="pkg-badge badge-hot">Luna de miel</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-region">Romance · Exclusivo</div>
+          <div class="pkg-name">Luna de Miel a Medida</div>
+          <div class="pkg-desc">Diseñamos el viaje perfecto para comenzar una nueva etapa. Desde destinos caribeños a europeos.</div>
+          <div class="pkg-footer">
+            <span class="pkg-cta-label">Cotizá tu paquete</span>
+            <div class="pkg-link" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">→</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:48px;" class="fade-up">
+      <a href="https://wa.me/5493885820032" class="btn-gold" target="_blank" onclick="return openWhatsApp('Quiero ver más paquetes', 'paquetes')">Ver todos los paquetes</a>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINOS -->
+<section id="destinos">
+  <div class="container">
+    <div class="fade-up">
+      <span class="eyebrow">Nuestros destinos</span>
+      <h2 class="sec-title">El mundo, <em>organizado</em><br>para vos</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="dest-filters fade-up">
+      <button class="dest-filter active">Todos</button>
+      <button class="dest-filter">Argentina</button>
+      <button class="dest-filter">Internacional</button>
+      <button class="dest-filter">Grupos</button>
+      <button class="dest-filter">Luna de miel</button>
+    </div>
+    <div class="dest-grid fade-up">
+      <div class="dc">
+        <img class="dc-img" src="assets/images/destinos/calafate.png" alt="Calafate Patagonia"/>
+        <div class="dc-ov">
+          <div class="dc-region">Patagonia · Argentina</div>
+          <div class="dc-name">El Calafate &amp; Glaciares</div>
+          <div class="dc-desc">El espectáculo natural más imponente de Argentina. Perito Moreno frente a frente.</div>
+          <div class="dc-bot">
+            <span class="dc-cta-label">Cotizá tu viaje</span>
+            <div class="dc-arr">→</div>
+          </div>
+        </div>
+      </div>
+      <div class="dc">
+        <img class="dc-img" src="assets/images/destinos/caribe.png" alt="Caribe"/>
+        <div class="dc-ov">
+          <div class="dc-region">Caribe · México</div>
+          <div class="dc-name">Caribe Premium</div>
+          <div class="dc-desc">Cancún y Riviera Maya en resorts 5 estrellas.</div>
+          <div class="dc-bot">
+            <span class="dc-cta-label">Cotizá tu viaje</span>
+            <div class="dc-arr">→</div>
+          </div>
+        </div>
+      </div>
+      <div class="dc">
+        <img class="dc-img" src="assets/images/destinos/europa.png" alt="Europa París"/>
+        <div class="dc-ov">
+          <div class="dc-region">Europa · Circuito</div>
+          <div class="dc-name">Europa Clásica</div>
+          <div class="dc-desc">París, Roma, Barcelona. Guía en español.</div>
+          <div class="dc-bot">
+            <span class="dc-cta-label">Cotizá tu viaje</span>
+            <div class="dc-arr">→</div>
+          </div>
+        </div>
+      </div>
+      <div class="dc">
+        <img class="dc-img" src="assets/images/destinos/salta.png" alt="Grupos Salta NOA"/>
+        <div class="dc-ov">
+          <div class="dc-region">Noroeste · Argentina</div>
+          <div class="dc-name">Salta &amp; NOA</div>
+          <div class="dc-desc">Quebrada de Humahuaca y salinas en grupo.</div>
+          <div class="dc-bot">
+            <span class="dc-cta-label">Cotizá tu viaje</span>
+            <div class="dc-arr">→</div>
+          </div>
+        </div>
+      </div>
+      <div class="dc">
+        <img class="dc-img" src="assets/images/destinos/mediterraneo.png" alt="Mediterráneo Santorini"/>
+        <div class="dc-ov">
+          <div class="dc-region">Mediterráneo · Grecia</div>
+          <div class="dc-name">Mediterráneo</div>
+          <div class="dc-desc">Santorini, Atenas y las islas griegas.</div>
+          <div class="dc-bot">
+            <span class="dc-cta-label">Cotizá tu viaje</span>
+            <div class="dc-arr">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap fade-up">
+        <img class="about-img" src="assets/images/equipo/euge-real.png" alt="Fundadora de Leonas TUR"/>
+        <div class="about-frame"></div>
+        <div class="about-badge">
+          <div class="about-badge-n">8+</div>
+          <div class="about-badge-l">Años de experiencia</div>
+        </div>
+      </div>
+      <div class="about-content fade-up d2">
+        <span class="eyebrow">Quiénes Somos</span>
+        <h2 class="sec-title">Una leona que viaja<br><em>con vos, siempre</em></h2>
+        <div class="gold-line"></div>
+        <p class="sec-sub">Soy una mujer, madre, Abogada y Técnica en Turismo que un día decidí romper el molde y emprender el camino propio. Leonas TUR nació del deseo profundo de alcanzar la libertad y dedicarme a hacer que otros viajen y cumplan sus sueños.</p>
+        <p class="sec-sub" style="margin-top:12px;font-style:italic;color:var(--gold-lt);">"Cuando elegís Leonas TUR, yo viajo con vos, asegurándome de que todo sea impecable para que tu única preocupación sea disfrutar."</p>
+        <div class="about-items">
+          <div class="about-item">
+            <div class="about-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div>
+              <div class="about-it">Abogada + Técnica en Turismo</div>
+              <div class="about-id">Doble formación que te da respaldo legal y turístico en cada destino. Tus intereses, siempre protegidos.</div>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="about-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+            <div>
+              <div class="about-it">Itinerarios 100% a medida</div>
+              <div class="about-id">Aventura, Disney, escapadas románticas, viajes familiares o para solteros. Cada viaje diseñado para tu etapa de vida.</div>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="about-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.6 3.45 2 2 0 013.58 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 8.5a16 16 0 006 6l.92-.92a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16a2 2 0 010 .92z"/></svg></div>
+            <div>
+              <div class="about-it">Acompañamiento real, no bots</div>
+              <div class="about-id">Desde la consulta hasta que volvés, tenés a alguien de tu lado. Un vuelo cancelado no es tu problema, es el nuestro.</div>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="about-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+            <div>
+              <div class="about-it">Calidad-precio garantizada</div>
+              <div class="about-id">Nacionales e internacionales con el mejor respaldo. Siempre cuidando que cada peso valga la experiencia.</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:36px;">
+          <a href="nosotros.html" class="btn-ghost">Conocé nuestra historia completa &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <span class="eyebrow">Galería de destinos</span>
+      <h2 class="sec-title">Momentos que <em>no se olvidan</em></h2>
+      <div class="gold-line center"></div>
+      <p class="sec-sub" style="margin:0 auto;text-align:center;">Cada foto es un viaje posible. Cada destino, una historia esperando ser tuya.</p>
+    </div>
+
+    <div class="gal-bento fade-up">
+
+      <!-- CELL 1: HERO — Barcelona Sagrada Família -->
+      <div class="gal-cell">
+        <img class="gal-img" src="assets/images/galeria/barcelona.jpg"
+             alt="Barcelona — Sagrada Família, España" loading="lazy"/>
+        <div class="gal-num">01</div>
+        <div class="gal-ov">
+          <div>
+            <div class="gal-tag">Europa · España</div>
+            <div class="gal-name">Barcelona</div>
+            <div class="gal-tagline">La Sagrada Família de Gaudí, el Barrio Gótico y la Barceloneta. Arte, historia y vida mediterránea en una sola ciudad.</div>
+            <button class="gal-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+              Quiero conocer Barcelona <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CELL 2: Caribe resort -->
+      <div class="gal-cell">
+        <img class="gal-img" src="assets/images/galeria/caribe.jpg"
+             alt="Caribe — Resort todo incluido, Cancún" loading="lazy"/>
+        <div class="gal-num">02</div>
+        <div class="gal-ov">
+          <div>
+            <div class="gal-tag">Caribe · México</div>
+            <div class="gal-name">Caribe Premium</div>
+            <div class="gal-tagline">Aguas turquesas, sol sin filtro y resort 5 estrellas. El descanso que te merecés.</div>
+            <button class="gal-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+              Ver paquetes Caribe <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CELL 3: Santorini -->
+      <div class="gal-cell">
+        <img class="gal-img" src="assets/images/galeria/santorini.jpg"
+             alt="Santorini — Desayuno con vista al Egeo, Grecia" loading="lazy"/>
+        <div class="gal-num">03</div>
+        <div class="gal-ov">
+          <div>
+            <div class="gal-tag">Mediterráneo · Grecia</div>
+            <div class="gal-name">Santorini</div>
+            <div class="gal-tagline">Desayuno frente al Egeo, cúpulas azules y atardeceres que paran el tiempo.</div>
+            <button class="gal-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+              Vivir Grecia <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CELL 4: Caribbean infinity pool -->
+      <div class="gal-cell">
+        <img class="gal-img" src="assets/images/galeria/escapada-lujo.jpg"
+             alt="Resort de lujo — Piscina infinita frente al mar" loading="lazy"/>
+        <div class="gal-num">04</div>
+        <div class="gal-ov">
+          <div>
+            <div class="gal-tag">Luna de miel · Todo incluido</div>
+            <div class="gal-name">Escapada de lujo</div>
+            <div class="gal-tagline">Piscina infinita, horizonte sin fin. Para los que saben que el lujo real es la paz.</div>
+            <button class="gal-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+              Diseñar mi escapada <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CELL 5: Río de Janeiro -->
+      <div class="gal-cell">
+        <img class="gal-img" src="assets/images/galeria/rio-de-janeiro.jpg"
+             alt="Río de Janeiro — Cristo Redentor, Brasil" loading="lazy"/>
+        <div class="gal-num">05</div>
+        <div class="gal-ov">
+          <div>
+            <div class="gal-tag">Sudamérica · Brasil</div>
+            <div class="gal-name">Río de Janeiro</div>
+            <div class="gal-tagline">El Cristo Redentor sobre el Pan de Azúcar. Copacabana, Ipanema y el carnaval más famoso del mundo esperan.</div>
+            <button class="gal-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+              Quiero ir a Río <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CELL 6: París — Full width ribbon -->
+      <div class="gal-cell">
+        <img class="gal-img" src="assets/images/galeria/paris.jpg"
+             alt="París — Torre Eiffel al atardecer, Europa" loading="lazy"/>
+        <div class="gal-num">06</div>
+        <div class="gal-ov">
+          <div>
+            <div class="gal-tag">Europa · Francia</div>
+            <div class="gal-name">París — La ciudad que lo cambia todo</div>
+            <div class="gal-tagline">Dicen que nadie sale igual de París. Nosotras nos encargamos de que llegues cuando el mundo está perfecto.</div>
+            <button class="gal-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+              Diseñar mi viaje a Europa <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+          <div style="flex-shrink:0;padding-left:24px;display:flex;align-items:center;">
+            <div style="text-align:right;">
+              <div style="font-family:var(--font-d);font-size:2.5rem;color:var(--gold-lt);line-height:1;font-weight:400;">6</div>
+              <div style="font-size:0.65rem;color:rgba(245,240,232,0.55);letter-spacing:0.12em;text-transform:uppercase;margin-top:3px;">Destinos<br>icónicos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /gal-bento -->
+
+    <!-- Bottom invitation -->
+    <div class="fade-up" style="text-align:center;margin-top:52px;">
+      <p style="font-family:var(--font-d);font-size:clamp(1.1rem,2vw,1.4rem);font-style:italic;color:rgba(245,240,232,0.65);margin-bottom:22px;">
+        ¿Cuál de estos momentos querés que sea tuyo?
+      </p>
+      <a href="https://wa.me/5493885820032"
+         class="btn-gold" target="_blank" rel="noopener" onclick="return openWhatsApp('Hola! Vi la galería y quiero saber más', 'galeria')"
+         style="display:inline-flex;align-items:center;gap:10px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Hablemos de tu próximo destino
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <span class="eyebrow">Testimonios</span>
+      <h2 class="sec-title">Lo que dicen quienes<br><em>ya viajaron con nosotras</em></h2>
+      <div class="gold-line center"></div>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-up d1">
+        <div class="stars">★★★★★</div>
+        <div class="testi-q">"Viajamos a Calafate en familia y fue perfecto. Cada detalle estaba pensado. El asesor respondió a las 2am cuando se nos complicó el vuelo de conexión. Eso no lo da ninguna app."</div>
+        <div class="testi-aut">
+          <div class="testi-av">MR</div>
+          <div>
+            <div class="testi-n">Marcela R.</div>
+            <div class="testi-d">Viaje a Calafate · Enero 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up d2">
+        <div class="stars">★★★★★</div>
+        <div class="testi-q">"Luna de miel en Cancún. Todo impecable: hotel, traslados, excursiones. Nos dieron opciones que Despegar ni te imagina. Atención personalizada de principio a fin."</div>
+        <div class="testi-aut">
+          <div class="testi-av">FS</div>
+          <div>
+            <div class="testi-n">Fede y Sol</div>
+            <div class="testi-d">Luna de miel Caribe · Marzo 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up d3">
+        <div class="stars">★★★★★</div>
+        <div class="testi-q">"Fuimos 12 personas a Europa. Coordinaron todo: vuelos, hoteles, transfers, tours en español. Impresionante el nivel de organización. Lo recomiendo sin dudarlo."</div>
+        <div class="testi-aut">
+          <div class="testi-av">GV</div>
+          <div>
+            <div class="testi-n">Gustavo V.</div>
+            <div class="testi-d">Europa en grupo · Octubre 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:44px;" class="fade-up">
+      <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(196,150,58,0.08);border:1px solid var(--border);border-radius:40px;padding:12px 24px;">
+        <span style="color:var(--gold);font-size:1rem;">★</span>
+        <span style="font-size:0.88rem;color:var(--muted);">4.9 promedio · Basado en +120 reseñas de Google</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2 class="sec-title">Todo lo que necesitás<br><em>saber antes de viajar</em></h2>
+      <div class="gold-line center"></div>
+    </div>
+    <div class="faq-wrap fade-up">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          ¿Cómo es el proceso para armar un viaje con Leonas TUR?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><p>Muy simple: nos contactás por WhatsApp o el formulario, un asesor te responde en menos de 2 horas, armamos una propuesta a medida sin compromiso y, si te conviene, coordinamos todo: vuelos, hotel, traslados y asistencia en destino.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          ¿Puedo pagar en pesos y en cuotas?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><p>Sí. Trabajamos con múltiples opciones de financiación en pesos: cuotas sin interés según banco y destino, y planes especiales para grupos. Consultanos por las condiciones vigentes según tu banco.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          ¿Qué diferencia hay entre comprarle a Leonas TUR y usar Despegar o Booking?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><p>Los buscadores online te dan un precio y te dejan solo. Nosotras te damos un asesor real que conoce el destino, coordina todo y está disponible si algo falla. Además tenemos acceso a cupos y tarifas negociadas que los buscadores no pueden ofrecer.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          ¿Organizan viajes para grupos y empresas?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><p>Sí, es una de nuestras especialidades. Desde grupos familiares de 8 personas hasta viajes corporativos de 50+. Coordinamos logística completa con tarifas preferenciales por volumen.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          ¿Qué pasa si hay un imprevisto durante el viaje?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><p>Tenés soporte directo con tu asesor 24/7 durante todo el viaje. Si hay una cancelación, reprogramación o emergencia, lo resolvemos nosotras. No te dejamos solo/a frente a un call center en inglés.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          ¿Trabajan con alguna certificación o respaldo oficial?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><p>Sí. Somos miembros del Grupo GEA y contamos con certificación Safe Travels. Operamos con proveedores internacionales verificados y seguros de viaje en todos los paquetes.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="fade-up">
+        <span class="eyebrow">Contacto</span>
+        <h2 class="sec-title">Tu próximo viaje<br><em>empieza aquí</em></h2>
+        <div class="gold-line"></div>
+        <p class="sec-sub">Un asesor real te responde en menos de 2 horas. Sin bots. Sin formularios interminables.</p>
+        <div class="c-items">
+          <div class="c-item">
+            <div class="c-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></div>
+            <div>
+              <div class="c-t">WhatsApp (respuesta inmediata)</div>
+              <div class="c-v">+54 9 388 582-0032</div>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div>
+              <div class="c-t">Email</div>
+              <div class="c-v"><a href="mailto:tuleona@gmail.com" onclick="return openMail('Consulta desde la web')">tuleona@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <div class="c-t">Ubicación</div>
+              <div class="c-v">Argentina · Atención virtual en todo el país</div>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div>
+              <div class="c-t">Horario de atención</div>
+              <div class="c-v">Lun–Sáb 9:00 a 20:00 · Emergencias 24/7</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-form fade-up d2">
+        <div class="c-form-title">Consultá sin compromiso</div>
+        <div class="f-grid">
+          <div>
+            <label class="f-lbl">Nombre</label>
+            <input id="f-nombre" class="f-inp" type="text" placeholder="Tu nombre"/>
+          </div>
+          <div>
+            <label class="f-lbl">WhatsApp</label>
+            <input id="f-wa" class="f-inp" type="tel" placeholder="+54 9..."/>
+          </div>
+          <div>
+            <label class="f-lbl">Email</label>
+            <input id="f-email" class="f-inp f-full" type="email" placeholder="tu@email.com" style="grid-column:1/-1;"/>
+          </div>
+          <div class="f-full">
+            <label class="f-lbl">Destino de interés</label>
+            <select id="f-destino" class="f-sel">
+              <option>Caribe / Cancún</option>
+              <option>Europa</option>
+              <option>Argentina</option>
+              <option>Miami + Orlando</option>
+              <option>Mediterráneo / Crucero</option>
+              <option>Luna de miel a medida</option>
+              <option>Otro destino</option>
+            </select>
+          </div>
+          <div class="f-full">
+            <label class="f-lbl">Contanos tu idea de viaje</label>
+            <textarea id="f-mensaje" class="f-area" placeholder="Fechas estimadas, cantidad de personas, presupuesto aproximado..."></textarea>
+          </div>
+        </div>
+        <button class="f-submit" onclick="return submitForm(this)">Enviar consulta →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+      <div>
+        <div class="ft-logo"><img src="assets/images/logo.png" alt="Leonas TUR"/></div>
+        <p class="ft-desc">Agencia de viajes premium de Argentina. Transformamos logística compleja en experiencias de vida.</p>
+        <div class="ft-socials">
+          <a href="https://www.instagram.com/leonas_tur" class="ft-s ft-ig" target="_blank" rel="noopener" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://www.tiktok.com/@leonastur" class="ft-s ft-tt" target="_blank" rel="noopener" title="TikTok"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.77 1.52V6.76a4.85 4.85 0 01-1-.07z"/></svg></a>
+          <a href="https://www.facebook.com/leonastur" class="ft-s ft-fb" target="_blank" rel="noopener" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="mailto:tuleona@gmail.com" class="ft-s ft-mail" title="Email" onclick="return openMail('Consulta desde la web')"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          <a href="https://wa.me/5493885820032" class="ft-s ft-wa" target="_blank" rel="noopener" title="WhatsApp" onclick="return openWhatsApp('', 'footer')"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h4>Destinos</h4>
+        <ul>
+          <li><a href="#destinos">Caribe / Cancún</a></li>
+          <li><a href="#destinos">Europa</a></li>
+          <li><a href="#destinos">Patagonia</a></li>
+          <li><a href="#destinos">Miami / Orlando</a></li>
+          <li><a href="#destinos">Mediterráneo</a></li>
+          <li><a href="#destinos">Turquía</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#paquetes">All-inclusive</a></li>
+          <li><a href="#paquetes">Luna de miel</a></li>
+          <li><a href="#paquetes">Viajes grupales</a></li>
+          <li><a href="#paquetes">Corporativo</a></li>
+          <li><a href="#paquetes">Turismo nacional</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#nosotros">Quiénes somos</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DESARROLLADO POR IT -->
+    <div class="ft-dev">
+      <div class="ft-dev-logo">
+        <img src="assets/images/it-logo.png" alt="IT Integral Solutions" onerror="this.style.display='none'"/>
+      </div>
+      <div class="ft-dev-info">
+        <span>Desarrollado por <strong>IT Integral Solutions</strong></span>
+        <span class="ft-dev-sep">·</span>
+        <a href="tel:+5491133634277">+54 9 11 3363-4277</a>
+        <span class="ft-dev-sep">·</span>
+        <a href="mailto:it.integral.solution@gmail.com">it.integral.solution@gmail.com</a>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <p>© 2026 Leonas TUR · leonastur.tur.ar · Argentina</p>
+      <p style="color:var(--gold);font-size:0.75rem;">Safe Travels · Grupo GEA</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/5493885820032" class="wa-float" target="_blank" title="Chateá con nosotras" onclick="return openWhatsApp('', 'flotante')">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
